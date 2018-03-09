@@ -1,6 +1,13 @@
 
 # Build an LM
-ngram-count -order 4 -text cheating.txt  -lm data/local/lm.arpa
+ngram-count -order 3 -text cheating.txt  -lm data/local/lm.arpa
+
+# Update the lexicon
+cat cheating.txt | tr ' ' '\n' > words.txt
+cat words.txt | while read line; do pron=`flite -ps -t $line none`; echo $line $pron; done > t
+cat t | sed 's/pau/ /' | sed 's/ pau//' | sort | uniq > data/local/dict/lexicon.txt
+echo -e "<UNK> SPN" >> data/local/dict/lexicon.txt
+rm -r data/local/dict/lexiconp.txt
 
 # Non silence  phones
 grep -v -w SIL data/local/dict/lexicon.txt | awk '{for(n=2;n<=NF;n++) { p[$n]=1; }} END{for(x in p) {print x}}'  | sort > data/local/dict/nonsilence_phones.txt
