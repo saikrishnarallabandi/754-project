@@ -1,0 +1,330 @@
+{
+  "rasa_nlu_data": {
+    "regex_features": [
+      {
+        "name": "zipcode",
+        "pattern": "[0-9]{5}"
+      },
+      {
+        "name": "greet",
+        "pattern": "hey[^\\s]*"
+      }
+    ],
+    "entity_synonyms": [
+      {
+        "value": "newyork",
+        "synonyms": ["NewYork", "Newyork", "newYork"]
+      },
+      {
+        "value": "Washington",
+        "synonyms": ["Washington DC", "Washington D.C"]
+      }
+    ],
+    "common_examples": [
+      {
+        "text": "hey", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "howdy", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hey there",
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hello", 
+        "intent": "greet", 
+        "entities": []
+      }, 
+      {
+        "text": "hi", 
+        "intent": "greet", 
+        "entities": []
+      },
+      {
+        "text": "good morning",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "good evening",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "dear sir",
+        "intent": "greet",
+        "entities": []
+      },
+      {
+        "text": "yes", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yep", 
+        "intent": "affirm", 
+        "entities": []
+      }, 
+      {
+        "text": "yeah", 
+        "intent": "affirm", 
+        "entities": []
+      },
+      {
+        "text": "indeed",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "that's right",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "ok",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "right, thank you",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "correct",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "great choice",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "sounds really good",
+        "intent": "affirm",
+        "entities": []
+      },
+      {
+        "text": "i'm looking to go to newyork",
+        "intent": "location_search",
+        "entities": []
+      },
+      {
+        "text": "I want to go to Hyderabad",
+        "intent": "location_search",
+        "entities": []
+      },
+      {
+        "text": "I am searching for Pennsylvania",
+        "intent": "location_search",
+        "entities": []
+      },
+      {
+        "text": "i'm looking for a Pittsburgh",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 31,
+            "end": 36,
+            "value": "Pittsburgh",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "show me Washington",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 15,
+            "value": "Washington",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "show me north russia",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 8,
+            "end": 14,
+            "value": "russia",
+            "entity": "location"
+          },
+          {
+            "start": 34,
+            "end": 39,
+            "value": "north",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "show me the map of Mumbai", 
+        "intent": "location_search", 
+        "entities": [
+          {
+            "start": 31, 
+            "end": 37, 
+            "value": "Mumbai", 
+            "entity": "location"
+          }, 
+          {
+            "start": 10, 
+            "end": 17, 
+            "value": "mexican", 
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "i am looking for delhi",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 20,
+            "end": 26,
+            "value": "delhi",
+            "entity": "location"
+          }
+        ]
+      },     {
+        "text": "search for newyork",
+        "intent": "location_search",
+        "entities": []
+      },
+      {
+        "text": "anywhere in canberra",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 16,
+            "end": 20,
+            "value": "canberra",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "anywhere near Munich",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 14,
+            "end": 19,
+            "value": "Munich",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for LA",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 29,
+            "value": "LA",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking at california",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 29,
+            "end": 34,
+            "value": "californina",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "I am looking for mexico",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 17,
+            "end": 38,
+            "value": "mexico",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "central utah",
+        "intent": "location_search",
+        "entities": [
+          {
+            "start": 0,
+            "end": 7,
+            "value": "utah",
+            "entity": "location"
+          },
+          {
+            "start": 8,
+            "end": 14,
+            "value": "central",
+            "entity": "location"
+          }
+        ]
+      },
+      {
+        "text": "bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "goodbye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "good bye", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "stop", 
+        "intent": "goodbye", 
+        "entities": []
+      }, 
+      {
+        "text": "end", 
+        "intent": "goodbye", 
+        "entities": []
+      },
+      {
+        "text": "farewell",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "Bye bye",
+        "intent": "goodbye",
+        "entities": []
+      },
+      {
+        "text": "have a good one",
+        "intent": "goodbye",
+        "entities": []
+      }
+    ]
+  }
+}

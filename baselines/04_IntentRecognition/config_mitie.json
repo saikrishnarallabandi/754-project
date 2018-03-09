@@ -1,0 +1,7 @@
+{
+  "pipeline": "mitie",
+  "mitie_file": "/home/saikrishnalticmu/Documents/Courses/DialogSystems/Baseline/Intent_Module/Rasa/data/total_word_feature_extractor.dat",
+  "path" : "./projects",
+  "data" : "/home/saikrishnalticmu/Documents/Courses/DialogSystems/Baseline/Intent_Module/Rasa/data/demo-rasa.json",
+  "port": 5001
+}

@@ -1,0 +1,338 @@
+{
+  "rasa_nlu_data": {
+    "common_examples": [
+      {
+        "entities": [], 
+        "intent": "greet", 
+        "text": "hey"
+      }, 
+      {
+        "entities": [], 
+        "intent": "greet", 
+        "text": "howdy"
+      }, 
+      {
+        "entities": [], 
+        "intent": "greet", 
+        "text": "hey there"
+      }, 
+      {
+        "entities": [], 
+        "intent": "greet", 
+        "text": "hello"
+      }, 
+      {
+        "entities": [], 
+        "intent": "greet", 
+        "text": "hi"
+      }, 
+      {
+        "entities": [], 
+        "intent": "greet", 
+        "text": "good morning"
+      }, 
+      {
+        "entities": [], 
+        "intent": "greet", 
+        "text": "good evening"
+      }, 
+      {
+        "entities": [], 
+        "intent": "greet", 
+        "text": "dear sir"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "yes"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "yep"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "yeah"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "indeed"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "that's right"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "ok"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "great"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "right, thank you"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "correct"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "great choice"
+      }, 
+      {
+        "entities": [], 
+        "intent": "affirm", 
+        "text": "sounds really good"
+      }, 
+      {
+        "entities": [], 
+        "intent": "location_search", 
+        "text": "i'm looking to go to newyork"
+      }, 
+      {
+        "entities": [], 
+        "intent": "location_search", 
+        "text": "I want to go to Hyderabad"
+      }, 
+      {
+        "entities": [], 
+        "intent": "location_search", 
+        "text": "I am searching for Pennsylvania"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 31, 
+            "end": 36, 
+            "value": "Pittsburgh", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "i'm looking for a Pittsburgh"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 8, 
+            "end": 15, 
+            "value": "Washington", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "show me Washington"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 8, 
+            "end": 14, 
+            "value": "russia", 
+            "entity": "location"
+          }, 
+          {
+            "start": 34, 
+            "end": 39, 
+            "value": "north", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "show me north russia"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 31, 
+            "end": 37, 
+            "value": "Mumbai", 
+            "entity": "location"
+          }, 
+          {
+            "start": 10, 
+            "end": 17, 
+            "value": "mexican", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "show me the map of Mumbai"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 20, 
+            "end": 26, 
+            "value": "delhi", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "i am looking for delhi"
+      }, 
+      {
+        "entities": [], 
+        "intent": "location_search", 
+        "text": "search for newyork"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 16, 
+            "end": 20, 
+            "value": "canberra", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "anywhere in canberra"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 14, 
+            "end": 19, 
+            "value": "Munich", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "anywhere near Munich"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 17, 
+            "end": 29, 
+            "value": "LA", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "I am looking for LA"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 29, 
+            "end": 34, 
+            "value": "californina", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "I am looking at california"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 17, 
+            "end": 38, 
+            "value": "mexico", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "I am looking for mexico"
+      }, 
+      {
+        "entities": [
+          {
+            "start": 0, 
+            "end": 7, 
+            "value": "utah", 
+            "entity": "location"
+          }, 
+          {
+            "start": 8, 
+            "end": 14, 
+            "value": "central", 
+            "entity": "location"
+          }
+        ], 
+        "intent": "location_search", 
+        "text": "central utah"
+      }, 
+      {
+        "entities": [], 
+        "intent": "goodbye", 
+        "text": "bye"
+      }, 
+      {
+        "entities": [], 
+        "intent": "goodbye", 
+        "text": "goodbye"
+      }, 
+      {
+        "entities": [], 
+        "intent": "goodbye", 
+        "text": "good bye"
+      }, 
+      {
+        "entities": [], 
+        "intent": "goodbye", 
+        "text": "stop"
+      }, 
+      {
+        "entities": [], 
+        "intent": "goodbye", 
+        "text": "end"
+      }, 
+      {
+        "entities": [], 
+        "intent": "goodbye", 
+        "text": "farewell"
+      }, 
+      {
+        "entities": [], 
+        "intent": "goodbye", 
+        "text": "Bye bye"
+      }, 
+      {
+        "entities": [], 
+        "intent": "goodbye", 
+        "text": "have a good one"
+      }
+    ], 
+    "entity_synonyms": [
+      {
+        "synonyms": [
+          "NewYork", 
+          "Newyork", 
+          "newYork"
+        ], 
+        "value": "newyork"
+      }, 
+      {
+        "synonyms": [
+          "Washington DC", 
+          "Washington D.C"
+        ], 
+        "value": "Washington"
+      }
+    ], 
+    "regex_features": [
+      {
+        "pattern": "[0-9]{5}", 
+        "name": "zipcode"
+      }, 
+      {
+        "pattern": "hey[^\\s]*", 
+        "name": "greet"
+      }
+    ]
+  }
+}
