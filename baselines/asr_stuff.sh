@@ -16,3 +16,11 @@ for f in phones.txt words.txt phones.txt L.fst L_disambig.fst phones; do     cp 
 # Make G.fst
 cat data/local/lm.arpa | arpa2fst --disambig-symbol=#0 --read-symbol-table=data/lang_test/words.txt - data/lang_test/G.fst
 fstisstochastic data/lang_test/G.fst 
+
+# Rebuild graph
+./utils/mkgraph.sh data/lang_test/ ~/Downloads/tri2a_librispeech/ ~/Downloads/tri2a_librispeech/graph_tgsmall/
+
+# Copy stuff
+cp graph_tgsmall/HCLG.fst final.mdl graph_tgsmall/phones.txt graph_tgsmall/words.txt tree /home/saikrishnalticmu/tools/kaldi/egs/voxforge/online_demo/online-data/models/tri2a_cities
+
+
